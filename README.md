@@ -1,4 +1,4 @@
 riademos
 ========
 
-Diverse tester och demo kursen RIA
+Diverse tester och demo kursen RIA-utveckling med JavaScript
