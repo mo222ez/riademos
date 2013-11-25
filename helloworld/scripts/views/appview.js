@@ -1,8 +1,9 @@
-define(["backbone", "underscore", "text!templates/test.html"], function (Backbone, _, TestTemplate) {
+define(["backbone", "underscore", "handlebars", "text!templates/test.html"], function (Backbone, _, Handlebars, TestTemplate) {
 	var AppView = Backbone.View.extend({
 		el: "#greeting",
 
-		template: _.template(TestTemplate),
+		//template: _.template(TestTemplate),
+		template: Handlebars.compile(TestTemplate),
 
 		initialize: function () {
 			console.log("Up and running!");
